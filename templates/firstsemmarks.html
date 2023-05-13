@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSN Mentor Management</title>
+    <link rel="shortcut icon" href="https://lms.ssn.edu.in/theme/image.php/boost/theme/1661575225/favicon" />
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Ubuntu:ital,wght@0,300;0,400;1,300&family=Varela+Round&display=swap');
+body{
+    background-color: #eb75dc;
+    background-image: url('https://drive.google.com/uc?export=view&id=15EnmEWTGIVKWJCr220YHfbketPc3swgl');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu',sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height:65px;
+    width:100%;
+    background-color:white;
+    color:blue;
+}
+
+nav ul li{
+    padding: 10px;
+    margin: 10px;
+}
+.Home,.About{
+    padding: 5px;
+    margin:5px;
+    color:blue;
+}
+
+.Home:visited,.About:visited{
+    color:blue;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+.brand img{
+    width:60px;
+    padding:5px;
+    margin: 10px;
+}
+
+.input1{
+    margin-left: 60px;
+    padding: 10px;
+}
+.table1{
+    margin-left: 50px;
+}
+
+.table{
+    margin-left: 50px;
+}
+.end1{
+    margin-left: 285px;
+}
+.end2{
+    margin-left: 320px;
+    margin-top: 30px;
+}
+
+.if1{
+    color:red;
+    font-weight: bolder;
+}
+
+.mb1{
+    color:aquamarine;
+    font-weight: bolder;
+}
+
+.mb2{
+    color:yellow;
+    font-weight: bolder;
+}
+
+.next{
+    margin-left: 850px;
+    padding: 10px;
+}
+
+.next a{
+  font-size: larger;
+  font-weight: bolder;
+  color:red;
+}
+
+.next a:hover{
+  color:cyan
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin-left: 850px;
+    font-weight: bold;
+    background: #1E90FF;
+    width: 150px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://drive.google.com/uc?export=view&id=1xO4fHV-vTVJSU3i4gGSluAGJygBwgK5O" alt="Logo of Spotify CPR vresion"><marquee>First Semester Marks Form</marquee></li>
+            <a href="/" class="Home">Home</a>
+        </ul>
+    </nav>
+    <h1 class="if1">First Semester(Internal Assessment)</h1>
+
+<div class="input1">
+    <input type="radio" id="i1" name="i1" value="Hosteller">
+    <label for="i1" class="mb1">Hosteller</label><br>
+    <br>
+    <input type="radio" id="i2" name="i2" value="Day Scholar">
+    <label for="i2" class="mb1">Day Scholar:</label><br>
+    <br>
+    <label for="i3" class="if1">Room No/Bus No:</label>
+    <input type="number" id="i3" name="i3"><br>
+    <br>
+    <label for="i4" class="mb2">Name of the Mentor:</label>
+    <input type="text" id="i4" name="i4"><br>
+    <br>
+</div>
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th class="header-label mb2">SI No</th>
+        <th class="header-label if1">Subject Code & Name </th>
+        <th class="header-label mb1">Unit Test1 </th>
+        <th class="header-label mb1">Unit Test2</th>
+        <th class="header-label mb2">Unit Test3</th>
+      </tr>
+      <tr>
+        <th><input type="number" id="i5" name="i5"></th>
+        <th><input type="string" id="i6" name="i6"></th>
+        <th><input type="number" id="i7" name="i7"></th>
+        <th><input type="number" id="i8" name="i8"></th>
+        <th><input type="number" id="i9" name="i9"></th>
+      </tr>
+      <tr>
+        <th><input type="number" id="i10" name="i10"></th>
+        <th><input type="string" id="i11" name="i11"></th>
+        <th><input type="number" id="i12" name="i12"></th>
+        <th><input type="number" id="i13" name="i13"></th>
+        <th><input type="number" id="i14" name="i14"></th>
+      </tr>
+      <tr>
+        <th><input type="number" id="i15" name="i15"></th>
+        <th><input type="string" id="i16" name="i16"></th>
+        <th><input type="number" id="i17" name="i17"></th>
+        <th><input type="number" id="i18" name="i18"></th>
+        <th><input type="number" id="i19" name="i19"></th>
+      </tr>
+      <tr>
+        <th><input type="number" id="i20" name="i20"></th>
+        <th><input type="string" id="i21" name="i21"></th>
+        <th><input type="number" id="i22" name="i22"></th>
+        <th><input type="number" id="i23" name="i23"></th>
+        <th><input type="number" id="i24" name="i25"></th>
+      </tr>
+      <tr>
+        <th><input type="number" id="i25" name="i25"></th>
+        <th><input type="string" id="i26" name="i26"></th>
+        <th><input type="number" id="i27" name="i27"></th>
+        <th><input type="number" id="i28" name="i28"></th>
+        <th><input type="number" id="i29" name="i29"></th>
+      </tr>
+      <tr>
+        <th><input type="number" id="i30" name="i30"></th>
+        <th><input type="string" id="i31" name="i31"></th>
+        <th><input type="number" id="i32" name="i32"></th>
+        <th><input type="number" id="i33" name="i33"></th>
+        <th><input type="number" id="i34" name="i34"></th>
+      </tr>
+      <br>
+    </thead>
+    </table>
+
+
+    <div class="end2">
+        <label class="mb2">Rank</label>
+        <input type="number" id="i38" name="i38">
+       </div>
+
+
+       <table class="table1">
+        <thead>
+          <tr>
+            <th class="header-label mb2">SI No</th>
+            <th class="header-label mb1">Subject Code & Name </th>
+            <th class="header-label mb2">Grade  </th>
+            <th class="header-label mb2">Grade Points</th>
+            <th class="header-label mb1">Month and Year</th>
+          </tr>
+          <tr>
+            <th><input type="number" id="i5" name="i5"></th>
+            <th><input type="string" id="i6" name="i6"></th>
+            <th><input type="number" id="i7" name="i7"></th>
+            <th><input type="number" id="i8" name="i8"></th>
+            <th><input type="number" id="i9" name="i9"></th>
+          </tr>
+          <tr>
+            <th><input type="number" id="i10" name="i10"></th>
+            <th><input type="string" id="i11" name="i11"></th>
+            <th><input type="number" id="i12" name="i12"></th>
+            <th><input type="number" id="i13" name="i13"></th>
+            <th><input type="number" id="i14" name="i14"></th>
+          </tr>
+          <tr>
+            <th><input type="number" id="i15" name="i15"></th>
+            <th><input type="string" id="i16" name="i16"></th>
+            <th><input type="number" id="i17" name="i17"></th>
+            <th><input type="number" id="i18" name="i18"></th>
+            <th><input type="number" id="i19" name="i19"></th>
+          </tr>
+          <tr>
+            <th><input type="number" id="i20" name="i20"></th>
+            <th><input type="string" id="i21" name="i21"></th>
+            <th><input type="number" id="i22" name="i22"></th>
+            <th><input type="number" id="i23" name="i23"></th>
+            <th><input type="number" id="i24" name="i25"></th>
+          </tr>
+          <tr>
+            <th><input type="number" id="i25" name="i25"></th>
+            <th><input type="string" id="i26" name="i26"></th>
+            <th><input type="number" id="i27" name="i27"></th>
+            <th><input type="number" id="i28" name="i28"></th>
+            <th><input type="number" id="i29" name="i29"></th>
+          </tr>
+          <tr>
+            <th><input type="number" id="i30" name="i30"></th>
+            <th><input type="string" id="i31" name="i31"></th>
+            <th><input type="number" id="i32" name="i32"></th>
+            <th><input type="number" id="i33" name="i33"></th>
+            <th><input type="number" id="i34" name="i34"></th>
+          </tr>
+          <br>
+        </thead>
+        </table>
+
+        <div class="btn">
+            <a href="/">Save and Submit</a>  
+        </div>
+</body>
+</html>

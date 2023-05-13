@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSN Mentor Management</title>
+    <link rel="shortcut icon" href="https://lms.ssn.edu.in/theme/image.php/boost/theme/1661575225/favicon" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Convergence&family=Ubuntu:ital,wght@0,300;0,400;1,300&family=Varela+Round&display=swap');
+
+    body {
+        background-color: #eb75dc;
+        background-image: url('https://drive.google.com/uc?export=view&id=15EnmEWTGIVKWJCr220YHfbketPc3swgl');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        height: 65px;
+        width: 100%;
+        background-color: white;
+        color: blue;
+    }
+
+    nav ul li {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .Home,
+    .About {
+        padding: 5px;
+        margin: 5px;
+        color: blue;
+    }
+
+    .Home:visited,
+    .About:visited {
+        color: blue;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 1.6rem;
+    }
+
+    .brand img {
+        width: 60px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    table, th, td {
+        border:1px solid black;
+    }
+
+.if1{
+    color:red;
+    font-weight: bolder;
+}
+
+.mb1{
+    color:aquamarine;
+    font-weight: bolder;
+}
+
+.mb2{
+    color:yellow;
+    font-weight: bolder;
+}
+
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://drive.google.com/uc?export=view&id=1xO4fHV-vTVJSU3i4gGSluAGJygBwgK5O" alt="Logo of Spotify CPR vresion">SSN Mentor Manager</li>
+            <a href="/" class="Home">Home</a>
+        </ul>
+    </nav>
+    <div>
+        <table>
+            <tr>
+                <th class="if1">Subject 1 Mark</th>
+                <th class="mb2">Subject 2 Mark</th>
+                <th class="if1">Subject 3 Mark</th>
+                <th class="mb1">Subject 4 Mark</th>
+                <th class="mb2">Subject 5 Mark</th>
+                <th class="if1">Subject 6 Mark</th>
+            </tr>
+    {% for obj in objs%}
+    {%if obj.mark1 < 50 or obj.mark2 < 50 or obj.mark3 < 50 or obj.mark4 < 50 or obj.mark5 < 50 or obj.mark6 < 50 %}
+    <tr>
+    <td class="if1"> {{obj.mark1}} </td>
+    <td class="mb2"> {{obj.mark2}} </td>
+    <td class="if1"> {{obj.mark3}} </td>
+    <td class="mb1"> {{obj.mark4}} </td>
+    <td class="mb2"> {{obj.mark5}} </td>
+    <td class="if1"> {{obj.mark6}} </td>
+    </tr> 
+    {%endif%}
+    <br/>
+    {%endfor%}
+</table>
+</div>
+
+</body>
+
+</html>

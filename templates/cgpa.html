@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGPA/GPA Calcultor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Convergence&family=Ubuntu:ital,wght@0,300;0,400;1,300&family=Varela+Round&display=swap');
+
+    body {
+        background-color: #eb75dc;
+        background-image: url('https://drive.google.com/uc?export=view&id=15EnmEWTGIVKWJCr220YHfbketPc3swgl');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        height: 65px;
+        width: 100%;
+        background-color: white;
+        color: blue;
+    }
+
+    nav ul li {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .Home,
+    .About {
+        padding: 5px;
+        margin: 5px;
+        color: blue;
+    }
+
+    .Home:visited,
+    .About:visited {
+        color: blue;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 1.6rem;
+    }
+
+    .brand img {
+        width: 60px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .glass_container {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width:33%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index {
+    margin: 150px auto;
+}
+
+.glass_container label {
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+.cal{
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: #1E90FF;
+    width: 150px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+input{
+    border-radius: 10px;
+    text-align: center;
+}
+button{
+    margin-left: 500px;
+    
+}
+.res{
+    margin-left: 800px;
+    
+}
+</style>
+<body>
+</body>
+<nav>
+    <ul>
+        <li class="brand"><img src="https://drive.google.com/uc?export=view&id=1xO4fHV-vTVJSU3i4gGSluAGJygBwgK5O" alt="SSN Logo"><marquee>CGPA Calculator</marquee></li>
+        <a href="/" class="Home">Home</a>
+    </ul>
+</nav>
+    <div class="cal glass_container">
+        <br><br>
+        <label for="s1">Enter the mark for subject 1: <input type="number" id="s1" name="s1"></label>
+        <label for="s11">Enter credits for subject 1: <input type="number" id="s11" name="s11"></label><br>
+
+        <label for="s2">Enter the mark for subject 2: <input type="number" id="s2" name="s2"></label>
+        <label for="s21">Enter credits for subject 2: <input type="number" id="s21" name="s21"></label><br>
+
+        <label for="s3">Enter the mark for subject 3: <input type="number" id="s3" name="s3"></label>
+        <label for="s31">Enter credits for subject 3: <input type="number" id="s31" name="s31"></label><br>
+
+        <label for="s4">Enter the mark for subject 4: <input type="number" id="s4" name="s4"></label>
+        <label for="s41">Enter credits for subject 4: <input type="number" id="s41" name="s41"></label><br>
+
+        <label for="s5">Enter the mark for subject 5: <input type="number" id="s5" name="s5"></label>
+        <label for="s51">Enter credits for subject 5: <input type="number" id="s51" name="s51"><br></label><br>
+
+        <label for="s6">Enter the mark for subject 6: <input type="number" id="s6" name="s6"></label>
+        <label for="s61">Enter credits for subject 6: <input type="number" id="s61" name="s61"></label><br>
+
+        <button class="btn" onclick="calculate()">Calculate GPA</button><br><br>
+
+    </div>
+
+    <div class="res container">
+        <h5>Your CGPA: <input type="number" placeholder="0" id ="output-screen"></h5>
+    </div>
+
+    
+
+    <script>
+         let outputScreen = document.getElementById("output-screen");
+      function calculate(){
+              var a = document.getElementById("s1").value;
+              var b = document.getElementById("s11").value;
+
+              var c = document.getElementById("s2").value;
+              var d = document.getElementById("s21").value;
+
+              var e = document.getElementById("s3").value;
+              var f = document.getElementById("s31").value;
+
+              var g = document.getElementById("s4").value;
+              var h = document.getElementById("s41").value;
+
+              var i = document.getElementById("s5").value;
+              var j = document.getElementById("s51").value;
+
+              var k = document.getElementById("s6").value;
+              var l = document.getElementById("s61").value;
+              
+              var q= ((Number(a)*Number(b)) + (Number(c)*Number(d)) +(Number(e)*Number(f)) +(Number(g)*Number(h)) +(Number(i)*Number(j)) +(Number(k)*Number(l)))/(Number(b)+Number(d)+Number(f)+Number(h)+Number(j)+Number(l));
+            outputScreen.value=q;}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>FAQ</title>
+	<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        height: 65px;
+        width: 100%;
+        background-color: white;
+        color: blue;
+    }
+
+    nav ul li {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .Home,
+    .About {
+        padding: 5px;
+        margin: 5px;
+        color: blue;
+    }
+
+    .Home:visited,
+    .About:visited {
+        color: blue;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 1.6rem;
+    }
+
+    .brand img {
+        width: 60px;
+        padding: 5px;
+        margin: 10px;
+    }
+		body{
+            background-color: #eb75dc;
+        background-image: url('https://drive.google.com/uc?export=view&id=15EnmEWTGIVKWJCr220YHfbketPc3swgl');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+		}
+		.layout{
+			width: 600px;
+			margin: auto;
+		}
+		.accordion{
+			padding: 10px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			background: rgb(105, 206, 105);
+			border-radius: 10px;
+		}
+		.accordion__question p{
+			margin: 5px;
+			padding: 0;
+			font-family: Verdana;
+			font-size: 20px;
+		}
+		.accordion__answer p{
+			margin: 5px;
+			padding: 10px;
+			font-size: large;
+			font-family: Verdana, Geneva, Tahoma, sans-serif;
+			color: rgb(255, 255, 255);
+			background: rgb(82, 170, 122);
+			border-radius: 10px;
+		}
+		.accordion:hover{
+			cursor: pointer;
+		}
+		.accordion__answer {
+			display: none;
+		}
+		.accordion.active .accordion__answer {
+			display: block;
+		}
+	</style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://drive.google.com/uc?export=view&id=1xO4fHV-vTVJSU3i4gGSluAGJygBwgK5O" alt="SSN Logo"><marquee>FAQ Section</marquee></li>
+            <a href="/" class="Home">Home</a>
+        </ul>
+    </nav>
+	<div class="layout">
+		<div class="accordion">
+			<div class="accordion__question">
+				<p>What issues am I allowed to discuss with a mentor?</p>
+
+			</div>
+			<div class="accordion__answer">
+				<p>Anything ranging from marks, difficulties in learning, attendance, career prospects, guidance on specific interests
+				   scholarships, internships to friendship, mistrust and betrayal, bullying, jealousy and competition,
+				   past baggages, loneliness and solitude, depression, restrictiveness and over-indulgence from paretnts.
+				</p>
+
+			</div>
+		</div>
+		<div class="accordion">
+			<div class="accordion__question">
+				<p>How do I schedule an in-person meeting?</p>
+
+			</div>
+			<div class="accordion__answer">
+				<p>Approach your class advisor/ representative to know your mentor. You can then approach the mentor
+                    in person and schedule a session, convinient to both the ends. 
+                </p>
+				
+			</div>
+		</div>
+		
+	    <div class="accordion">
+            <div class="accordion__question">
+                <p> What about my privacy?</p>
+            </div>
+  
+            <div class="accordion__answer">
+                <p>
+                Rest assured that your privacy will be held intact. Whatever spoken stays secure with the mentor
+                for future reference and reflection.
+                </p>
+            </div>
+        </div>
+ 
+	    <div class="accordion">
+            <div class="accordion__question">
+                <p> How often can I meet my mentor?</p>
+            </div>
+  
+            <div class="accordion__answer">
+                <p>
+                There is no upper limit on the count of the meetings. However, students must not mishandle the resorceful
+                mentors and make sure that they have plausible reason to set the meeting on. 
+                </p>
+            </div>
+        </div>    
+
+	    <div class="accordion">
+            <div class="accordion__question">
+                <p> What if my mentor is not available for a signature?</p>
+            </div>
+  
+            <div class="accordion__answer">
+                <p>
+                 In that case, you can get the acknowledgement/ signature from your class advisor if necessary and sufficient.
+                 If insufficient, you can contact the concerned mentor via call or text and discuss the remedies, 
+                 provided you have the class advisor's permission.
+                </p>
+            </div>
+        </div>    
+        
+	    <div class="accordion">
+            <div class="accordion__question">
+                <p> How do I get an Outpass from the mentor?</p>
+            </div>
+  
+            <div class="accordion__answer">
+                <p>
+                 First of all, you must have proof of your parents'/ gaurdian's approval of leaving the college,
+                 completely aware that the ward is at his/ her own risk post leaving. With a hand-written letter or other  
+                 equivalent document, you can secure the mentor's signature upon approach. 
+                </p>
+            </div>
+        </div>          
+        
+	    <div class="accordion">
+            <div class="accordion__question">
+                <p> How do I know who my mentor is?</p>
+            </div>
+  
+            <div class="accordion__answer">
+                <p>
+                 You would have been mailed a document for your class containing the mentor's name against the student.
+                 Otherwise, you can get informed from your class advisor or representative. 
+
+                </p>
+            </div>
+        </div>                   
+	</div>
+
+	<script>
+		let answers=document.querySelectorAll(".accordion");
+		answers.forEach((event)=>{
+			event.addEventListener('click',()=>{
+				if(event.classList.contains("active")){
+					event.classList.remove("active");
+				}
+				else{
+					event.classList.add("active");
+				}
+			})
+		})
+	</script>
+</body>
+</html>

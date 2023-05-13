@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSN Mentor Management</title>
+    <link rel="shortcut icon" href="https://lms.ssn.edu.in/theme/image.php/boost/theme/1661575225/favicon" />
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Ubuntu:ital,wght@0,300;0,400;1,300&family=Varela+Round&display=swap');
+body{
+    background-color: #eb75dc;
+    background-image: url('https://drive.google.com/uc?export=view&id=15EnmEWTGIVKWJCr220YHfbketPc3swgl');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu',sans-serif;
+}
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    height:65px;
+    width:100%;
+    background-color:white;
+    color:blue;
+}
+
+nav ul li{
+    padding: 10px;
+    margin: 10px;
+}
+.Home,.About{
+    padding: 5px;
+    margin:5px;
+    color:blue;
+}
+
+.Home:visited,.About:visited{
+    color:blue;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+
+.brand img{
+    width:60px;
+    padding:5px;
+    margin: 10px;
+}
+
+.table1 {
+    border: 1px solid black;
+    margin-right: 750px;
+    margin-left: 50px;
+}
+.table2{
+    margin-right: 400px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.table2 ,tr ,input{
+    height: 75px;
+}
+
+.if1{
+    color:red;
+    font-weight: bolder;
+}
+
+.mb1{
+    color:aquamarine;
+    font-weight: bolder;
+}
+
+.mb2{
+    color:yellow;
+    font-weight: bolder;
+}
+
+.table3{
+    margin-right: 400px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.table3 ,tr ,input{
+    height: 75px;
+}
+
+.table4{
+    margin-right: 400px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.table4 ,tr ,input{
+    height: 75px;
+}
+
+.table5{
+    margin-right: 400px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.table5 ,tr ,input{
+    height: 75px;
+}
+
+.table6{
+    margin-right: 400px;
+    height: 100px;
+    margin-left: 50px;
+}
+
+.table6 ,tr ,input{
+    height: 75px;
+}
+
+.next{
+    margin-left: 850px;
+    padding: 10px;
+}
+
+.next a{
+  font-size: larger;
+  font-weight: bolder;
+  color:yellow;
+}
+
+.next a:hover{
+  color:cyan
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin-left: 850px;
+    font-weight: bold;
+    background: #1E90FF;
+    width: 150px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+</style>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://drive.google.com/uc?export=view&id=1xO4fHV-vTVJSU3i4gGSluAGJygBwgK5O" alt="Logo of Spotify CPR vresion"><marquee>Mentor Meeting Details</marquee></li>
+            <a href="/" class="Home">Home</a>
+        </ul>
+    </nav>
+    <h2 class="if1">&emsp;&emsp;Mentor Meeting Details</h2><br>
+
+    <div class="table1">
+        <table>
+            <tr>
+             <td width="170px" class="if1">SI.No</td>
+             <td width="130px" class="mb2">Date</td>
+             <td width="110px" class="mb1">Time</td>
+             <td width="170px" class="mb1">Remarks</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="table2"> 
+        <table>
+            <tr>
+                <input type="number" id="i1" name="i1">
+                <input type="date" id="i2" name="i2">
+                <input type="time" id="i3" name="i3">
+                <input type="text" id="i4" name="i4">
+              </tr>
+        </table>
+    </div>
+
+    <div class="table3"> 
+        <table>
+            <tr>
+                <input type="number" id="i5" name="i5">
+                <input type="date" id="i6" name="i6">
+                <input type="time" id="i7" name="i7">
+                <input type="text" id="i8" name="i8">
+              </tr>
+        </table>
+    </div>
+
+    <div class="table4"> 
+        <table>
+            <tr>
+                <input type="number" id="i9" name="i9">
+                <input type="date" id="i10" name="i10">
+                <input type="time" id="i11" name="i11">
+                <input type="text" id="i12" name="i12">
+              </tr>
+        </table>
+    </div>
+
+    <div class="table5"> 
+        <table>
+            <tr>
+                <input type="number" id="i13" name="i13">
+                <input type="date" id="i14" name="i14">
+                <input type="time" id="i15" name="i15">
+                <input type="text" id="i16" name="i16">
+              </tr>
+        </table>
+    </div>
+
+    <div class="table6"> 
+        <table>
+            <tr>
+                <input type="number" id="i17" name="i17">
+                <input type="date" id="i18" name="i18">
+                <input type="time" id="i19" name="i19">
+                <input type="text" id="i20" name="i20">
+              </tr>
+        </table>
+    </div>
+    
+    <div class="btn">
+        <a href="/markspg/">Next page</a>  
+        </div>
+</body>
+</html>

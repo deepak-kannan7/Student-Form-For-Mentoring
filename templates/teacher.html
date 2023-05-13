@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSN Mentor Management</title>
+    <link rel="shortcut icon" href="https://lms.ssn.edu.in/theme/image.php/boost/theme/1661575225/favicon" />
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Convergence&family=Ubuntu:ital,wght@0,300;0,400;1,300&family=Varela+Round&display=swap');
+
+    body {
+        background-color: #eb75dc;
+        background-image: url('https://drive.google.com/uc?export=view&id=15EnmEWTGIVKWJCr220YHfbketPc3swgl');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        height: 65px;
+        width: 100%;
+        background-color: white;
+        color: blue;
+    }
+
+    nav ul li {
+        padding: 5px;
+        margin: 10px;
+    }
+
+    .Home,
+    .About {
+        padding: 5px;
+        margin: 5px;
+        color: blue;
+    }
+
+    .Home:visited,
+    .About:visited {
+        color: blue;
+    }
+
+    .brand {
+        display: flex;
+        align-items: center;
+        font-weight: bolder;
+        font-size: 1.6rem;
+    }
+
+    .brand img {
+        width: 60px;
+        padding: 5px;
+        margin: 10px;
+    }
+
+    table, th, td {
+        border:1px solid black;
+    }
+
+.if1{
+    color:red;
+    font-weight: bolder;
+}
+
+.mb1{
+    color:aquamarine;
+    font-weight: bolder;
+}
+
+.mb2{
+    color:yellow;
+    font-weight: bolder;
+}
+
+div{
+    margin: 25px;
+}
+
+.btn {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background: #1E90FF;
+    width: 150px;
+    margin-left: 850px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition-duration: 0.3s;
+    transition-property: box-shadow, transform;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+</style>
+
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="https://drive.google.com/uc?export=view&id=1xO4fHV-vTVJSU3i4gGSluAGJygBwgK5O" alt="SSN Logo"><marquee>SSN Mentor Manager</marquee></li>
+            <a href="/" class="Home">Home</a>
+        </ul>
+    </nav>
+    <div>
+        <table>
+            <tr>
+                <th class="mb2">Name</th>
+                <th class="mb1">Roll No.</th>
+                <th class="if1">Subject 1 Attendance</th>
+                <th class="mb2">Subject 2 Attendance</th>
+                <th class="if1">Subject 3 Attendance</th>
+                <th class="mb1">Subject 4 Attendance</th>
+                <th class="mb2">Subject 5 Attendance</th>
+                <th class="if1">Subject 6 Attendance</th>
+            </tr>
+    {% for obj in objs%}
+    {%if obj.att1 < 75 or obj.att2 < 75 or obj.att3 < 75 or obj.att4 < 75 or obj.att5 < 75 or obj.att6 < 75 %}
+    <tr>
+    <td class="mb2"> {{obj.name}} </td>
+    <td class="mb1"> {{obj.rollno}} </td>
+    <td class="if1"> {{obj.att1}} </td>
+    <td class="mb2"> {{obj.att2}} </td>
+    <td class="if1"> {{obj.att3}} </td>
+    <td class="mb1"> {{obj.att4}} </td>
+    <td class="mb2"> {{obj.att5}} </td>
+    <td class="if1"> {{obj.att6}} </td>
+    </tr> 
+    {%endif%}
+    <br/>
+    {%endfor%}
+</table>
+</div>
+<button type="submit" class="btn"><a href="/markview">Next</a></button>
+</body>
+
+</html>
